@@ -85,6 +85,9 @@ public class RPGCharacter implements MainCharacter , Summon , RingofDeath , Ring
         Scroll += 20;
         Mana +=40;
         Stat_up();
+        if(Mana>MaxMana){
+            Mana=MaxMana;
+        }
     }
 
     public void fight(RPGCharacter Lord, RPGCharacter Mons) {

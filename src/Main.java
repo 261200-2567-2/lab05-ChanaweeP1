@@ -25,10 +25,11 @@ public class Main {
         Lord.RegenMana();
         Lord.Stat();
         System.out.println("---------------------------------------");
-        sword.SwordBaseDamage=10000.0;
+        sword.SwordBaseDamage = 1000.0;
         Lord.fight(Lord, GiGi);
         Lord.Stat();
-        System.out.println("---------------------------------------");
+
+        /*System.out.println("---------------------------------------");
         Lord.LostSword();
         spear.SwordBaseDamage=100.0;
         Lord.fight(Lord, GiGi);
@@ -57,7 +58,7 @@ public class Main {
         System.out.println("---------------------------------------");
         Lord.Help(Lord);
         Lord.Stat();
-        System.out.println("---------------------------------------");
+        System.out.println("---------------------------------------");*/
 
 
 
