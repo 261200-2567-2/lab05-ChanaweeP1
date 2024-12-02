@@ -1,17 +1,67 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.print("Hello and welcome!");
+        RPGCharacter GiGi = new RPGCharacter(3, 6.0);
+        RPGCharacter Lord = new RPGCharacter(10, 10.0);
+        Sword sword = new Sword(12);
+        Sword spear = new Sword(10);
+        Shield shield = new Shield(8);
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Lord.GetSword(sword);
+        GiGi.GetSword(spear);
+        Lord.GetShield(shield);
+        Lord.LostShield();
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+
+        Lord.Stat();
+        System.out.println("----------------------------------------");
+
+
+        Lord.fight(Lord, GiGi);
+        Lord.Stat();
+        System.out.println("----------------------------------------");
+        Lord.Heal();
+        Lord.Stat();
+        System.out.println("---------------------------------------");
+        Lord.RegenMana();
+        Lord.Stat();
+        System.out.println("---------------------------------------");
+        sword.SwordBaseDamage = 1000.0;
+        Lord.fight(Lord, GiGi);
+        Lord.Stat();
+
+        /*System.out.println("---------------------------------------");
+        Lord.LostSword();
+        spear.SwordBaseDamage=100.0;
+        Lord.fight(Lord, GiGi);
+        Lord.Stat();
+        System.out.println("--------------------------------------");
+        Lord.ExtraHeal();
+        Lord.Stat();
+        System.out.println("--------------------------------------");
+        Lord.fight(Lord, GiGi);
+        Lord.Stat();
+        System.out.println("--------------------------------------");
+        Lord.Hi();
+        System.out.println("---------------------------------------");
+        Lord.OhGod(Lord);
+        Lord.Stat();
+        System.out.println("---------------------------------------");
+        GiGi.Stat();
+        System.out.println("---------------------------------------");
+        Lord.ByeBye(GiGi);
+        GiGi.Stat();
+        System.out.println("---------------------------------------");
+        Lord.Stat();
+        System.out.println("---------------------------------------");
+        Lord.RegenMana();
+        Lord.Stat();
+        System.out.println("---------------------------------------");
+        Lord.Help(Lord);
+        Lord.Stat();
+        System.out.println("---------------------------------------");*/
+
+
+
+
     }
 }
